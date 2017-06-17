@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="for_bilkent_students.librarynavigator.SearchResults"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="Previous Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/previousbutton" />
+
+        <Button
+            android:text="Next Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextbutton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="2000 Results"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/nextbutton"
+            android:layout_toStartOf="@+id/nextbutton" />
+        >
+
+
+        <ListView
+        android:layout_width="wrap_content"
+            android:id="@+id/listViewForResults"
+            android:layout_gravity="center_vertical"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/previousbutton"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
